@@ -1,0 +1,56 @@
+/* Contenedor principal del HERO */
+.hero {
+    min-height: 100vh;            /* ocupa toda la altura de la pantalla */
+    display: flex;                /* se usa flexbox para centrar */
+    justify-content: center;      /* centrado vertical */
+    align-items: center;          /* centrado horizontal */
+    padding: 40px 20px;           /* espaciado interno para pantallas más pequeñas */
+}
+
+/* Contenido hero */
+.hero-content {
+    max-width: 800px;             /* limita el ancho del texto */
+    text-align: center;           /* centra el texto */
+}
+
+/* Tipografía HERO */
+/* Título principal */
+.hero-title {   
+    font-size: 3rem;              /* tamaño grande */
+    font-weight: 700;             /* fuerte, jerarquía */
+    line-height: 1.2;             /* compacto y legible */
+    margin-bottom: 20px;          /* separación con el subtítulo */
+}
+
+/* Subtítulo del hero */
+.hero-subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 32px;
+}
+
+/* Botón principal */
+/* =====================
+   HERO CTA
+   ===================== */
+
+/* Botón principal */
+.btn-primary,
+.btn-primary:visited {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover y focus */
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #2563eb;
+}
