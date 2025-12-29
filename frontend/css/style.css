@@ -8,7 +8,7 @@
 .hero {
     background: linear-gradient(135deg, #5b2cff, #7b5cff);
     min-height: 100vh;
-    min-height: 100svh;            /* ocupa toda la altura de la pantalla */
+    min-height: 100svh;           /* ocupa toda la altura de la pantalla */
     display: flex;                /* se usa flexbox para centrar */
     justify-content: center;      /* centrado horizontal */
     align-items: center;          /* centrado vertical */
