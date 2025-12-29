@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Contenedor principal del HERO */
 .hero {
     background: linear-gradient(135deg, #5b2cff, #7b5cff);
@@ -53,7 +54,7 @@
     padding: 14px 28px;
     border-radius: 8px;
     font-weight: 600;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 /* Hover y focus */
@@ -61,7 +62,6 @@
 .btn-primary:focus {
     background-color: #2563eb;
       transform: translateY(-1px);
-      transition: background-color 0.2s ease, transform 0.2s ease;
 }
 /* Responsive MOBILE */
 @media (max-width: 768px) {
@@ -73,5 +73,293 @@
     }
     .hero-subtitle {
         font-size: 1rem;           /* texto más compacto */
+    }
+}
+
+/* Beneficios */
+.benefits {
+  background: linear-gradient(
+    180deg,
+    #ede9fe 0%,
+    #f8fafc 40%
+  );
+  padding: 80px 20px;
+}
+.benefit-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.benefit-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color:#0f172a
+}
+/* Grid de beneficios */
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+/* Card */
+.benefit-card {
+    background-color: #ffffff;
+    padding: 32px 34px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+.benefit-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+.benefit-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #475569;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .benefits {
+        padding: 60px 20px;
+    }
+    .benefit-title {
+        font-size: 1.8rem;
+    }
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal del HERO */
+.hero {
+    background: linear-gradient(135deg, #5b2cff, #7b5cff);
+    min-height: 100vh;
+    min-height: 100svh;            /* ocupa toda la altura de la pantalla */
+    display: flex;                /* se usa flexbox para centrar */
+    justify-content: center;      /* centrado horizontal */
+    align-items: center;          /* centrado vertical */
+    padding: 40px 20px;           /* espaciado interno para pantallas más pequeñas */
+}
+
+/* Contenido hero */
+.hero-content {
+    max-width: 800px;             /* limita el ancho del texto */
+    text-align: center;           /* centra el texto */
+}
+
+/* Tipografía HERO */
+/* Título principal */
+.hero-title {   
+    font-size: 3rem;              /* tamaño grande */
+    font-weight: 700;             /* fuerte, jerarquía */
+    line-height: 1.2;             /* compacto y legible */
+    margin-bottom: 20px;          /* separación con el subtítulo */
+}
+
+/* Subtítulo del hero */
+.hero-subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 32px;
+}
+
+/* Botón principal */
+/* =====================
+   HERO CTA
+   ===================== */
+
+/* Botón principal */
+.btn-primary,
+.btn-primary:visited {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover y focus */
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #2563eb;
+      transform: translateY(-1px);
+}
+/* Responsive MOBILE */
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px;
+    }
+    .hero-title {
+        font-size: 2.2rem;         /* reducción de tamaño en móviles */
+    }
+    .hero-subtitle {
+        font-size: 1rem;           /* texto más compacto */
+    }
+}
+
+/* Beneficios */
+.benefits {
+  background: linear-gradient(
+    180deg,
+    #ede9fe 0%,
+    #f8fafc 40%
+  );
+  padding: 80px 20px;
+}
+.benefit-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.benefit-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color:#0f172a
+}
+/* Grid de beneficios */
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+/* Card */
+.benefit-card {
+    background-color: #ffffff;
+    padding: 32px 34px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+.benefit-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+.benefit-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #475569;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .benefits {
+        padding: 60px 20px;
+    }
+    .benefit-title {
+        font-size: 1.8rem;
+    }
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================
+   PRICING
+   ===================== */
+
+.pricing {
+    background: linear-gradient(135deg, #5b2cff, #7b5cff);
+    padding: 100px 20px;
+}
+
+.pricing-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pricing-title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 64px;
+    color: #110e0e;
+}
+
+/* Grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: stretch;
+}
+
+/* Card base */
+.pricing-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Precio */
+.pricing-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #5b2cff;
+    margin: 16px 0 32px;
+}
+
+/* Features */
+.pricing-features {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.pricing-features li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+/* Botón abajo */
+.pricing-card .btn-primary {
+    margin-top: auto;
+}
+
+/* Plan destacado */
+.pricing-card.featured {
+    background: linear-gradient(135deg, #ede9fe, #ffffff);
+    border: 2px solid #5b2cff;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured .pricing-price {
+    color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: none;
     }
 }
